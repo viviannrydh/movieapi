@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import Form from './Form';
 import MovieLists from './MovieLists';
-import style from './MovieAPI.module.css'
-
 
 class MovieAPI extends Component {
     constructor(props) {
@@ -11,47 +9,54 @@ class MovieAPI extends Component {
         this.state = {
              movies:[],
              error:''
+             
         }
     }
     
-
     handleFetch=async (input)=>{
       try{
-        let   fetchData=[]
         const response=await fetch(`http://www.omdbapi.com/?apikey=2b591b5a&s=${input}`)
         const data=await response.json();
-        console.log(data);
-        fetchData=data.Search;
-        //const totalResults=data.totalResults;
-        //const pages=Math.ceil(totalResults/10);
-        this.setState({
-            movies:fetchData})
-       
-       /*for (let i=2; i<=pages; i++){
-            const response=await fetch(`http://www.omdbapi.com/?apikey=2b591b5a&s=${input}&page=${i}`)
-            const data=await response.json();
-            fetchData.push(fetchData, data.Search);
-            this.setState({
-                movies:fetchData})
-        }*/
+        console.log(data)
+        console.log(data.Response)
+        console.log(data.Error)
+            if(data.Response==="True"){
+                this.setState({
+                    movies:data.Search})
+            } else{
+             this.setState({
+                error: data.Error
+             })
+             console.log('Hello')
+             } 
+        console.log(this.state.error)
+        
     } catch(error){
-           alert(error) 
-    }}
+          
+   }}
+
     handleFilter=async (input,type)=>{
         try{
         const response=await fetch(`http://www.omdbapi.com/?apikey=2b591b5a&s=${input}&type=${type}`)
-        console.log(response.Error)
         const data=await response.json();
-        const filteredData=data.Search;
-        this.setState({
-            movies:filteredData})
+        console.log(data.Response)
+        console.log(data.Error)
+       
+        if(data.Response==='True'){
+                this.setState({
+                    movies:data.Search})
+        } else {
+             this.setState({
+                error: data.Error
+             })}
         
+        console.log(this.state.error)
     } catch(error){
-           alert(error) 
+          
     }} 
 
     componentDidMount=()=>{
-        this.handleFetch('Fireman Sam','all')
+        this.handleFetch('Mission Impossible','all')
     }
     
     render() {
@@ -65,10 +70,9 @@ class MovieAPI extends Component {
                    />
                    <MovieLists
                        movies={this.state.movies}
-                       handleSelectOptions={this.handleSelectOptions}
                        error={this.state.error}
-                      
                    />
+                
             </div>
         )
     }

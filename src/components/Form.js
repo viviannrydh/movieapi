@@ -27,11 +27,7 @@ class Form extends Component {
             this.props.handleFilter(this.state.userInput,e.target.value)
         }
     }
-    /*handleSelect=(e)=>{
-        this.props.handleSelectOptions(e.target.value)
-        console.log(e.target.value)
-        console.log('hello from form')
-    }*/
+  
     
     render() {
         return (
@@ -49,6 +45,7 @@ class Form extends Component {
                         <option value="series">Series</option>
                         <option value="game">Game</option>
                     </select>
+                   
                 </form>
             </div>
         )

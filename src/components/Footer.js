@@ -8,18 +8,30 @@ import twitter from '../icons/twitter-icon.png'
 function Footer() {
     return (
         <div className={style.footer}>
-            <span>Copy rights</span>
-            <span>Logo</span>
-            
+            <div>
+                <h5>Information</h5>
+                <p>Customer service</p>
+                <p>Terms and Conditions</p>
+                <p>Right of withdrawal</p>
+                <p>Cookies</p>
+            </div>
             <ul className={style.socialIcons}>
-                <li><a href="http://www.facebook.com"><img src={facebookLogo} /></a></li>
-                <li><a href="http://www.twitter.com"><img src={twitter} /></a></li>
-                <li><a href="http://www.youtube.com"><img src={youtubeLogo} /></a></li>
-                <li><a href="http://www.instagram.com"><img src={instagramLogo} /></a></li>
-                <li><a href="https://www.whatsapp.com/"><img src={whatsupLogo} /></a></li>
+                <li><a href="http://www.facebook.com"><img src={facebookLogo} alt="Facebook"/></a></li>
+                <li><a href="http://www.twitter.com"><img src={twitter} alt="Twitter"/></a></li>
+                <li><a href="http://www.youtube.com"><img src={youtubeLogo} alt="Youtube"/></a></li>
+                <li><a href="http://www.instagram.com"><img src={instagramLogo} alt="Instagram"/></a></li>
+                <li><a href="https://www.whatsapp.com/"><img src={whatsupLogo} alt="Whatsup"/></a></li>
             </ul>
-            <span>08-12345678</span>
-            <span>info@omdb.com</span>
+            <div>
+                <p></p>
+                <p>08-12345678</p>
+                <p>info@omdb.com</p>
+                <p>
+                        stockholmvägen 12,
+                        10000 Stockholm
+                </p>
+            </div>
+            
         </div>
     )
 }

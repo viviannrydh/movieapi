@@ -6,7 +6,7 @@ function Header() {
         <div className={style.header}>
             <h1>Movies, TV Series and Games</h1>
             <br></br>
-            <h5>Best API for students to learn fetching data, enjoy! ^_^</h5>
+            <h5>Best API for learning data-fetching, enjoy! ^_^</h5>
         </div>
     )
 }
