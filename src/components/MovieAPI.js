@@ -8,10 +8,21 @@ class MovieAPI extends Component {
     
         this.state = {
              movies:[],
-             error:''
-             
+             error:'',
+             page:1
         }
     }
+  /* infiniteScroll=()=>{
+        if(window.innerHeight+document.documentElement.scrollTop===document.documentElement.offsetHeight){
+            let newPage=this.state.page;
+            newPage++
+            if(newPage<=10){
+            this.setState({
+                page:newPage
+            })
+            this.handleFetch(newPage)
+        }} 
+    }*/
     
     handleFetch=async (input)=>{
       try{
@@ -56,7 +67,8 @@ class MovieAPI extends Component {
     }} 
 
     componentDidMount=()=>{
-        this.handleFetch('Mission Impossible','all')
+       // window.addEventListener('scroll',this.infiniteScroll)
+        this.handleFetch('Spider man','all')
     }
     
     render() {

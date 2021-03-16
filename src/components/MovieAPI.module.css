@@ -41,7 +41,7 @@
   height:50px;
   width:10%;
   border: rgb(150, 147, 147) 0.5px solid;
-  background-color: rgb(160, 32, 32);
+  background-color: rgb(160, 4, 4);
   color:rgb(238, 209, 210);
   text-align:center
 }
@@ -55,7 +55,7 @@
   text-align: center;
   text-decoration: none;
   padding-top: 50px;
-
+  padding-bottom: 80px;
 }
 .movie{
   display: flex;
@@ -66,7 +66,7 @@
   padding-top: 15px;
 }
 .footer{
-  background-color: rgb(39, 37, 37);
+  background-color: rgb(100, 2, 2);
   height: 10%;
   color:rgb(238, 209, 210);
   text-align: center;
