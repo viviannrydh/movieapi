@@ -10,8 +10,7 @@ class App extends Component {
       <div>
           <Header />
           <MovieAPI />
-          <Footer />
-        
+          <Footer />  
       </div>
     )
   }
