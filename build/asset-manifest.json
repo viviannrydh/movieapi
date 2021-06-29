@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/static/css/main.bf6414ef.chunk.css",
+    "main.js": "/static/js/main.d4e6f4e4.chunk.js",
+    "main.js.map": "/static/js/main.d4e6f4e4.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.3daafe43.js",
+    "runtime-main.js.map": "/static/js/runtime-main.3daafe43.js.map",
+    "static/js/2.d679e4fe.chunk.js": "/static/js/2.d679e4fe.chunk.js",
+    "static/js/2.d679e4fe.chunk.js.map": "/static/js/2.d679e4fe.chunk.js.map",
+    "static/js/3.8da464fb.chunk.js": "/static/js/3.8da464fb.chunk.js",
+    "static/js/3.8da464fb.chunk.js.map": "/static/js/3.8da464fb.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.bf6414ef.chunk.css.map": "/static/css/main.bf6414ef.chunk.css.map",
+    "static/js/2.d679e4fe.chunk.js.LICENSE.txt": "/static/js/2.d679e4fe.chunk.js.LICENSE.txt",
+    "static/media/YouTube-icon.d8016aee.png": "/static/media/YouTube-icon.d8016aee.png",
+    "static/media/facebook.bee36cd7.png": "/static/media/facebook.bee36cd7.png",
+    "static/media/instagram-icon.c5221294.jpeg": "/static/media/instagram-icon.c5221294.jpeg",
+    "static/media/MovieAPI.module.css": "/static/media/movies-tiles.13cbc52f.jpeg",
+    "static/media/whatsapp-icons.7fd983c0.jpeg": "/static/media/whatsapp-icons.7fd983c0.jpeg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.3daafe43.js",
+    "static/js/2.d679e4fe.chunk.js",
+    "static/css/main.bf6414ef.chunk.css",
+    "static/js/main.d4e6f4e4.chunk.js"
+  ]
+}
